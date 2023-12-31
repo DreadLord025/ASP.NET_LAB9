@@ -1,0 +1,32 @@
+﻿@model LAB9.Models.HomeViewModel
+
+<head>
+    <link rel="stylesheet" href="~/css/sin-city-style.css">
+    <title>LAB9</title>
+</head>
+
+<div class="weather">
+    <h3>Погода в @Model.Weather.City</h3>
+    <p class="weatherblock">@Model.Weather.Description, @Model.Weather.Temperature °C</p>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.Products)
+        {
+            <tr>
+                <td>@product.ID</td>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>

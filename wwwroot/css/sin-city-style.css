@@ -1,0 +1,49 @@
+﻿body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+h3 {
+    color: red;
+}
+
+.table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+    .table th, .table td {
+        border: 1px solid red;
+        padding: 10px;
+        color: red;
+    }
+
+    .table th {
+        background-color: black;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #444;
+    }
+
+    .table tr:nth-child(odd) {
+        background-color: #666;
+    }
+.weather {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+    .weather h3 {
+        margin-top: 0px;
+    }
+.weatherblock {
+    background-color: #666;
+    padding: 10px;
+    font-weight: bold
+}
